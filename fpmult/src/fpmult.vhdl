@@ -55,21 +55,14 @@ begin
 
 	stage0:fpmult_stage0 port map(clk,fpmult_stage0_in,fpmult_stage0_out);
 
-	fpmult_stageN_in_array(1).a<=fpmult_stage0_out.a;
-	fpmult_stageN_in_array(1).b<=fpmult_stage0_out.b;
-	fpmult_stageN_in_array(1).p_sign<=fpmult_stage0_out.p_sign;
-	fpmult_stageN_in_array(1).p_exp<=fpmult_stage0_out.p_exp;
-	fpmult_stageN_in_array(1).p_mantissa<=fpmult_stage0_out.p_mantissa;
+	fpmult_stageN_in_array(1)<=fpmult_stage0_out;
 	
 	pipeline:for N in 22 downto 1 generate
 		stageN:fpmult_stageN generic map(N) port map(clk,fpmult_stageN_in_array(N),fpmult_stageN_out_array(N));
 		fpmult_stageN_in_array(N+1)<=fpmult_stageN_out_array(N);
 	end generate pipeline;
 
-	fpmult_stage23_in.a<=fpmult_stageN_out_array(22).a;
-	fpmult_stage23_in.p_sign<=fpmult_stageN_out_array(22).p_sign;
-	fpmult_stage23_in.p_exp<=fpmult_stageN_out_array(22).p_exp;
-	fpmult_stage23_in.p_mantissa<=fpmult_stageN_out_array(22).p_mantissa;
+	fpmult_stage23_in<=fpmult_stageN_out_array(22);
 
 	stage23:fpmult_stage23 port map(clk,fpmult_stage23_in,fpmult_stage23_out);
 
