@@ -40,40 +40,50 @@ end function fp_sign;
 
 function fp_exp(fp:fp_type) return fp_exp_type is
 begin
-	return unsigned(fp(30 downto 23));
+  return(resize((unsigned(fp) srl 23),8));
 end function fp_exp;
 
 function fp_mantissa(fp:fp_type) return fp_mantissa_type is
 begin
-	return unsigned("1"&fp(22 downto 0));	-- Prepend implied '1' bit of IEEE-754 mantissa in order to return a 24 bit entity
+	return(fp_mantissa_type("1"&fp(22 downto 0)));	-- Prepend implied '1' bit of IEEE-754 mantissa in order to return a 24 bit entity
 end function fp_mantissa;
 
-function fp_is_normal(fp:fp_type) return boolean is
-	variable e:fp_exp_type;
+function fp_exp_is_min(exp:fp_exp_type) return boolean is
 begin
-	e:=fp_exp(fp);
+  return (exp=0);
+end function fp_exp_is_min;
 
-	return (e/=(others=>'0')) and (e/=(others=>'1'));
+function fp_exp_is_max(exp:fp_exp_type) return boolean is
+begin
+  return (exp=255);
+end function fp_exp_is_max;
+
+function fp_is_normal(fp:fp_type) return boolean is
+	variable exp:fp_exp_type;
+begin
+	exp:=fp_exp(fp);
+
+  return not fp_exp_is_min(exp) and not fp_exp_is_max(exp);
 end function fp_is_normal;
 
 function fp_is_zero(fp:fp_type) return boolean is
 begin
-	return (unsigned(fp_exp(fp))=0) and (unsigned(fp_mantissa(fp))=0);
+	return (fp_exp(fp)=0) and (fp_mantissa(fp)=0);
 end function fp_is_zero;
 
 function fp_is_subnormal(fp:fp_type) return boolean is
 begin
-	return (fp_exp(fp)=(others=>'0')) and (fp_mantissa(fp)/=(others=>'0'));
+	return (fp_exp(fp)=0) and (fp_mantissa(fp)/=0);
 end function fp_is_subnormal;
 
 function fp_is_infinite(fp:fp_type) return boolean is
 begin
-	return (fp_exp(fp)=(others=>'1')) and (fp_mantissa(fp)=(others=>'0'));
+	return (fp_exp_is_max(fp_exp(fp))) and (fp_mantissa(fp)=0);
 end function fp_is_infinite;
 
 function fp_is_nan(fp:fp_type) return boolean is
 begin
-	return (fp_exp(fp)=(others=>'1')) and (fp_mantissa(fp)/=(others=>'0'));
+	return (fp_exp_is_max(fp_exp(fp))) and (fp_mantissa(fp)/=0);
 end function fp_is_nan;
 
 function fp_is_signalling(fp:fp_type) return boolean is

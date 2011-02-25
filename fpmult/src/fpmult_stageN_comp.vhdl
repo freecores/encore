@@ -2,7 +2,6 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.fp_generic.all;
-use work.fpmult_generic.all;
 
 package fpmult_stageN_comp is
 	type fpmult_stageN_in_type is record

@@ -1,14 +1,15 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use work.fp_generic.all;
 
 package fpmult_comp is
 	type fpmult_in_type is record
-		a:std_logic_vector(22 downto 0);
-		b:std_logic_vector(22 downto 0);
+		a:fp_type;
+		b:fp_type;
 	end record;
 
 	type fpmult_out_type is record
-		p:std_logic_vector(22 downto 0);
+		p:fp_type;
 	end record;
 
 	component fpmult is
