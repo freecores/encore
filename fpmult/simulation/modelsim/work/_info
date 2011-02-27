@@ -6,13 +6,13 @@ Z0 dD:\Work\VHDL\encore\fpmult\simulation\modelsim
 Pfp_generic
 Z1 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
-Z3 w1298622665
+Z3 w1298807985
 Z4 dD:\Work\VHDL\encore\fpmult\simulation\modelsim
 Z5 8D:/Work/VHDL/encore/fpmult/src/fp_generic.vhdl
 Z6 FD:/Work/VHDL/encore/fpmult/src/fp_generic.vhdl
 l0
 L5
-VIZ87?]:eGi;[Of;KI853a1
+V9^S90T?Q`8T4KAa9WVb_R2
 Z7 OV;C;6.6c;45
 32
 b1
@@ -20,14 +20,14 @@ Z8 Mx2 4 ieee 14 std_logic_1164
 Z9 Mx1 4 ieee 11 numeric_std
 Z10 o-work work -O0
 Z11 tExplicit 1
-!s100 6E[>iDgXF0f5^P;EniR?N1
+!s100 2Jgaee4O<H_OEO1]hc4Rj3
 Bbody
-DBx4 work 10 fp_generic 0 22 IZ87?]:eGi;[Of;KI853a1
+DBx4 work 10 fp_generic 0 22 9^S90T?Q`8T4KAa9WVb_R2
 R1
 R2
 l0
-L34
-VN2`Ro=8if51_l3iC^e:Xn3
+L36
+V`VZJ46>U6IdOMPlbCZ5283
 R7
 32
 R8
@@ -35,54 +35,57 @@ R9
 R10
 R11
 nbody
-!s100 DT]ngZP]JkUIl6I=JQLe61
+!s100 3JFahPFcnKd0j]hL5:g<n0
 Efpmult
-Z12 w1298620573
+Z12 w1298721716
 Z13 DPx4 work 19 fpmult_stage23_comp 0 22 l>OeUL5UY5P7oNm;Lak>a0
 Z14 DPx4 work 18 fpmult_stagen_comp 0 22 XEeJY3OH<`T5HG0=TD@in1
 Z15 DPx4 work 18 fpmult_stage0_comp 0 22 ?R^WWoo?6<Z:1Qn:WB^il2
+Z16 DPx4 work 21 fpmult_stage_pre_comp 0 22 B^0>3HSBKU9LzPi00>FW11
 R1
-Z16 DPx4 work 10 fp_generic 0 22 IZ87?]:eGi;[Of;KI853a1
-Z17 DPx4 work 11 fpmult_comp 0 22 FZj;T54B?36HIEUM3YbeM1
+Z17 DPx4 work 10 fp_generic 0 22 9^S90T?Q`8T4KAa9WVb_R2
+Z18 DPx4 work 11 fpmult_comp 0 22 FZj;T54B?36HIEUM3YbeM1
 R2
 R4
-Z18 8D:/Work/VHDL/encore/fpmult/src/fpmult.vhdl
-Z19 FD:/Work/VHDL/encore/fpmult/src/fpmult.vhdl
+Z19 8D:/Work/VHDL/encore/fpmult/src/fpmult.vhdl
+Z20 FD:/Work/VHDL/encore/fpmult/src/fpmult.vhdl
 l0
-L8
-V9kGPb=cG;QOTLXm9`=HF>0
+L9
+VKVn]JNPU7=Rf1[Cz0T5gd3
 R7
 32
 R10
 R11
-!s100 []?gj@:ze2=MCVb_4Ek=A1
+!s100 `6UeC>^_IRzEoczK3mB973
 Astructural
 R13
 R14
 R15
-R1
 R16
+R1
 R17
+R18
 R2
-DEx4 work 6 fpmult 0 22 9kGPb=cG;QOTLXm9`=HF>0
-l25
-L16
-VHJzeXV=CECP^_oC][E@272
+DEx4 work 6 fpmult 0 22 KVn]JNPU7=Rf1[Cz0T5gd3
+l28
+L17
+Vlob56>kC184;=Gm2X<feK1
 R7
 32
-Mx7 4 ieee 14 std_logic_1164
-Mx6 4 work 11 fpmult_comp
-Mx5 4 work 10 fp_generic
-Z20 Mx4 4 ieee 11 numeric_std
+Mx8 4 ieee 14 std_logic_1164
+Mx7 4 work 11 fpmult_comp
+Mx6 4 work 10 fp_generic
+Z21 Mx5 4 ieee 11 numeric_std
+Mx4 4 work 21 fpmult_stage_pre_comp
 Mx3 4 work 18 fpmult_stage0_comp
 Mx2 4 work 18 fpmult_stagen_comp
 Mx1 4 work 19 fpmult_stage23_comp
 R10
 R11
-!s100 4PYzmBe=?N>dzWzalW?EE2
+!s100 S8Yc=]Khz62z^8D1NoGRT1
 Pfpmult_comp
 R1
-R16
+R17
 R2
 w1298502618
 R4
@@ -93,22 +96,22 @@ L5
 VFZj;T54B?36HIEUM3YbeM1
 R7
 32
-Z21 Mx3 4 ieee 14 std_logic_1164
-Z22 Mx2 4 work 10 fp_generic
+Z22 Mx3 4 ieee 14 std_logic_1164
+Z23 Mx2 4 work 10 fp_generic
 R9
 R10
 R11
 !s100 8^Jf^Q8ob[?`R2T:GheOT2
 Efpmult_stage0
-Z23 w1298199207
+Z24 w1298721914
 R14
 R15
-R16
+R17
 R1
 R2
 R4
-Z24 8D:/Work/VHDL/encore/fpmult/src/fpmult_stage0.vhdl
-Z25 FD:/Work/VHDL/encore/fpmult/src/fpmult_stage0.vhdl
+Z25 8D:/Work/VHDL/encore/fpmult/src/fpmult_stage0.vhdl
+Z26 FD:/Work/VHDL/encore/fpmult/src/fpmult_stage0.vhdl
 l0
 L7
 VL2dEWf?GHUPVQDR901Fd_1
@@ -120,26 +123,26 @@ R11
 Atwoproc
 R14
 R15
-R16
+R17
 R1
 R2
 DEx4 work 13 fpmult_stage0 0 22 L2dEWf?GHUPVQDR901Fd_1
 l25
 L15
-VC_E;h>YkM6FMKnA:LT6nf3
+Ve7V<;o6B4c?>d1@GZO^[01
 R7
 32
-Z26 Mx5 4 ieee 14 std_logic_1164
-R20
-Z27 Mx3 4 work 10 fp_generic
-Mx2 4 work 18 fpmult_stage0_comp
-Z28 Mx1 4 work 18 fpmult_stagen_comp
+Z27 Mx5 4 ieee 14 std_logic_1164
+Z28 Mx4 4 ieee 11 numeric_std
+Z29 Mx3 4 work 10 fp_generic
+Z30 Mx2 4 work 18 fpmult_stage0_comp
+Z31 Mx1 4 work 18 fpmult_stagen_comp
 R10
 R11
-!s100 KW5[86nlFNQg394Lh2=Y21
+!s100 >VaD`=lKTd[@WDMh05R4Y1
 Pfpmult_stage0_comp
 R14
-R16
+R17
 R1
 R2
 w1298622844
@@ -151,23 +154,23 @@ L7
 V?R^WWoo?6<Z:1Qn:WB^il2
 R7
 32
-Z29 Mx4 4 ieee 14 std_logic_1164
-Z30 Mx3 4 ieee 11 numeric_std
-R22
-R28
+Z32 Mx4 4 ieee 14 std_logic_1164
+Z33 Mx3 4 ieee 11 numeric_std
+R23
+R31
 R10
 R11
 !s100 ]Jhe1]kYb68zRohSLL[SX2
 Efpmult_stage23
-Z31 w1298114894
+Z34 w1298114894
 R14
 R13
-R16
+R17
 R1
 R2
 R4
-Z32 8D:/Work/VHDL/encore/fpmult/src/fpmult_stage23.vhdl
-Z33 FD:/Work/VHDL/encore/fpmult/src/fpmult_stage23.vhdl
+Z35 8D:/Work/VHDL/encore/fpmult/src/fpmult_stage23.vhdl
+Z36 FD:/Work/VHDL/encore/fpmult/src/fpmult_stage23.vhdl
 l0
 L7
 V31UgWknMFU?z9^k0X7Vfz0
@@ -179,7 +182,7 @@ R11
 Atwoproc
 R14
 R13
-R16
+R17
 R1
 R2
 DEx4 work 14 fpmult_stage23 0 22 31UgWknMFU?z9^k0X7Vfz0
@@ -188,17 +191,17 @@ L15
 VF:e19Y6WO`o6<TUC3QRSh3
 R7
 32
-R26
-R20
 R27
-Mx2 4 work 19 fpmult_stage23_comp
 R28
+R29
+Mx2 4 work 19 fpmult_stage23_comp
+R31
 R10
 R11
 !s100 RIDXClPf=Q<=5YLKoLG<h2
 Pfpmult_stage23_comp
 R14
-R16
+R17
 R1
 R2
 w1298622862
@@ -210,22 +213,86 @@ L7
 Vl>OeUL5UY5P7oNm;Lak>a0
 R7
 32
-R29
-R30
-R22
-R28
+R32
+R33
+R23
+R31
 R10
 R11
 !s100 85_ZfHLd;b4QSZeob;kmm0
-Efpmult_stagen
-Z34 w1298116579
+Efpmult_stage_pre
+Z37 w1298802793
 R14
+R15
 R16
+R17
 R1
 R2
 R4
-Z35 8D:/Work/VHDL/encore/fpmult/src/fpmult_stageN.vhdl
-Z36 FD:/Work/VHDL/encore/fpmult/src/fpmult_stageN.vhdl
+Z38 8D:/Work/VHDL/encore/fpmult/src/fpmult_stage_pre.vhdl
+Z39 FD:/Work/VHDL/encore/fpmult/src/fpmult_stage_pre.vhdl
+l0
+L7
+VAJRYGQPL9nHZgXzcn`;RE0
+R7
+32
+R10
+R11
+!s100 J<ARdoZSR<TK3J65LzXPH2
+Atwoproc
+R14
+R15
+R16
+R17
+R1
+R2
+DEx4 work 16 fpmult_stage_pre 0 22 AJRYGQPL9nHZgXzcn`;RE0
+l21
+L15
+V2I:EY7n@fE@PU3WNz2fSG3
+R7
+32
+Mx6 4 ieee 14 std_logic_1164
+R21
+Mx4 4 work 10 fp_generic
+Mx3 4 work 21 fpmult_stage_pre_comp
+R30
+R31
+R10
+R11
+!s100 GE;Y;:c26a`ON`1YWL]d=2
+Pfpmult_stage_pre_comp
+R14
+R15
+R17
+R1
+R2
+w1298721018
+R4
+8D:/Work/VHDL/encore/fpmult/src/fpmult_stage_pre_comp.vhdl
+FD:/Work/VHDL/encore/fpmult/src/fpmult_stage_pre_comp.vhdl
+l0
+L7
+VB^0>3HSBKU9LzPi00>FW11
+R7
+32
+R27
+R28
+R29
+R30
+R31
+R10
+R11
+!s100 @=kLJR?zzQX6_D7mAI;IJ2
+Efpmult_stagen
+Z40 w1298116579
+R14
+R17
+R1
+R2
+R4
+Z41 8D:/Work/VHDL/encore/fpmult/src/fpmult_stageN.vhdl
+Z42 FD:/Work/VHDL/encore/fpmult/src/fpmult_stageN.vhdl
 l0
 L7
 V0>mbz2jf_`ZdK_?nJb7dz2
@@ -236,7 +303,7 @@ R11
 !s100 g7;zFEZEAMHIMN9V6eC[]2
 Atwoproc
 R14
-R16
+R17
 R1
 R2
 DEx4 work 13 fpmult_stagen 0 22 0>mbz2jf_`ZdK_?nJb7dz2
@@ -245,15 +312,15 @@ L18
 VLihPPOY0@A4YAeZn5>^jX3
 R7
 32
-R29
-R30
-R22
-R28
+R32
+R33
+R23
+R31
 R10
 R11
 !s100 [`h:MEoJ=eCjF:7giPjih1
 Pfpmult_stagen_comp
-R16
+R17
 R1
 R2
 w1298622905
@@ -265,21 +332,21 @@ L6
 VXEeJY3OH<`T5HG0=TD@in1
 R7
 32
-R21
-Z37 Mx2 4 ieee 11 numeric_std
+R22
+Z43 Mx2 4 ieee 11 numeric_std
 Mx1 4 work 10 fp_generic
 R10
 R11
 !s100 3RgfO?mR^8D^8?0PEJ`RX3
 Etest_fpmult
-Z38 w1298502644
-R17
+Z44 w1298825279
+R18
 R1
-R16
+R17
 R2
 R4
-Z39 8D:/Work/VHDL/encore/fpmult/src/test_fpmult.vhdl
-Z40 FD:/Work/VHDL/encore/fpmult/src/test_fpmult.vhdl
+Z45 8D:/Work/VHDL/encore/fpmult/src/test_fpmult.vhdl
+Z46 FD:/Work/VHDL/encore/fpmult/src/test_fpmult.vhdl
 l0
 L6
 VQ7G_fPm1DPBAWY:afUiVV3
@@ -289,20 +356,20 @@ R7
 R10
 R11
 Atestbench
-R17
+R18
 R1
-R16
+R17
 R2
-Z41 DEx4 work 11 test_fpmult 0 22 Q7G_fPm1DPBAWY:afUiVV3
-l13
+Z47 DEx4 work 11 test_fpmult 0 22 Q7G_fPm1DPBAWY:afUiVV3
+l406
 L9
-Z42 Vk_6azP<I9N:9[Dd_?@Jg@2
-Z43 !s100 CST5S81[UFGE>6gd0HOdG2
+V69aEY]@WQbN[CWYV5RP_V1
+!s100 ;?7K7YE7fh:Em]9BNnKFQ2
 R7
 32
+R32
 R29
-R27
-R37
-Z44 Mx1 4 work 11 fpmult_comp
+R43
+Z48 Mx1 4 work 11 fpmult_comp
 R10
 R11

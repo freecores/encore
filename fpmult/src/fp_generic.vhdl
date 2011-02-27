@@ -28,6 +28,8 @@ function fp_is_infinite(fp:fp_type) return boolean;
 function fp_is_nan(fp:fp_type) return boolean;
 function fp_is_signalling(fp:fp_type) return boolean;
 function fp_is_quiet(fp:fp_type) return boolean;
+function fp_is_positive(fp:fp_type) return boolean;
+function fp_is_negative(fp:fp_type) return boolean;
 
 end package;
 
@@ -68,32 +70,42 @@ end function fp_is_normal;
 
 function fp_is_zero(fp:fp_type) return boolean is
 begin
-	return (fp_exp(fp)=0) and (fp_mantissa(fp)=0);
+	return (fp_exp(fp)=0) and (fp_mantissa(fp)(fp_mantissa_type'high-1 downto 0)=0);
 end function fp_is_zero;
 
 function fp_is_subnormal(fp:fp_type) return boolean is
 begin
-	return (fp_exp(fp)=0) and (fp_mantissa(fp)/=0);
+	return (fp_exp(fp)=0) and (fp_mantissa(fp)(fp_mantissa_type'high-1 downto 0)/=0);
 end function fp_is_subnormal;
 
 function fp_is_infinite(fp:fp_type) return boolean is
 begin
-	return (fp_exp_is_max(fp_exp(fp))) and (fp_mantissa(fp)=0);
+	return (fp_exp_is_max(fp_exp(fp))) and (fp_mantissa(fp)(fp_mantissa_type'high-1 downto 0)=0);
 end function fp_is_infinite;
 
 function fp_is_nan(fp:fp_type) return boolean is
 begin
-	return (fp_exp_is_max(fp_exp(fp))) and (fp_mantissa(fp)/=0);
+	return (fp_exp_is_max(fp_exp(fp))) and (fp_mantissa(fp)(fp_mantissa_type'high-1 downto 0)/=0);
 end function fp_is_nan;
 
 function fp_is_signalling(fp:fp_type) return boolean is
 begin
-	return fp_is_nan(fp) and fp_mantissa(fp)(22)='0';
+	return fp_is_nan(fp) and fp_mantissa(fp)(fp_mantissa_type'high-1)='0';
 end function fp_is_signalling;
 
 function fp_is_quiet(fp:fp_type) return boolean is
 begin
-	return fp_is_nan(fp) and fp_mantissa(fp)(22)='1';
+	return fp_is_nan(fp) and fp_mantissa(fp)(fp_mantissa_type'high-1)='1';
 end function fp_is_quiet;
+
+function fp_is_positive(fp:fp_type) return boolean is
+begin
+  return (fp_sign(fp)='0');
+end function fp_is_positive;
+
+function fp_is_negative(fp:fp_type) return boolean is
+begin
+  return (fp_sign(fp)='1');
+end function fp_is_negative;
 
 end package body fp_generic;
